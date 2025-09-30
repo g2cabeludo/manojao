@@ -49,4 +49,9 @@ footer{
 }
 img{
   text-align: center;
+  
+}
+img:hover{
+  transform: scale(4);
+  transition: 0.5s;
 }

@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+body{
+    text-align: center;
+}
+
+main{
+
+}
+p{
+    text-align: justify;
+}
+
+#img1{
+    border-radius: 50%;
+}
