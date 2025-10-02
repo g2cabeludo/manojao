@@ -7,23 +7,45 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
+    <header >
+<ul class="nav nav-underline text-bg-secondary p-3 text-body-emphasis">
+  <li class="nav-item">
+    <a class="nav-link active text-light" aria-current="page" href="index.html">IMC</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-light" href="#"></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-light" href="#">Link</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link disabled text-light" aria-disabled="true">Disabled</a>
+  </li>
+</ul>
+    </header>
 
-<form action="op.php" method="post">
+
+<form action="op.php" method="post" style="padding-top: 20px;">
 
   <div class="input-group mb-3">
-  <input type="text" name= "Username" class="form-control" placeholder="Username" aria-label="Username">
+  <input type="text" name= "Username" class="form-control mx-auto" placeholder="Nome" aria-label="Username" style="max-width: 500px;" required>
   </div>
 
   <div class="input-group mb-3">
-  <input type="text" name= "peso" class="form-control" placeholder="peso" aria-label="peso">
+  <input type="number" name= "peso" class="form-control mx-auto" placeholder="Peso(Kg)" aria-label="peso" style="max-width: 500px;" required>
   </div>
 
   <div class="input-group mb-3">
-  <input type="text" name= "altura" class="form-control" placeholder="altura" aria-label="altura">
+  <input type="number" name= "altura" class="form-control mx-auto" placeholder="Altura(m)" aria-label="altura" style="max-width: 500px;" required>
   </div>
  
-    <button type="submit" class="btn btn-primary">Primary</button>  
-    
+    <div class="d-flex justify-content-center">
+      <button type="submit" class="btn btn-primary" style="width: 300px;">Calcular IMC</button>
+    </div> 
+    <div class="d-flex justify-content-center" style="margin-top: 20px;">
+      <button type="reset" class="btn btn-primary" style="width: 300px;">Apagar</button>
+    </div>
+
 </form>
   
 
