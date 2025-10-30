@@ -32,18 +32,5 @@ Route::get('/home', function () {
 
 Route::get('/sobre', function (){
     return view('sobre', ['titulo' => 'Sobre Nós']);
-});
 
-Route::get('/alunos', function (){
-    return view('alunos', [
-        'titulo' => 'Lista de Alunos',
-        'alunos' => ['João', 'Maria', 'José', 'Jean Lindão'],
-    ]);
-});
-
-Route::get('/produto', function (){
-    return view('produto', [
-        'titulo' => 'Detalhes do Produto',
-        'produto' => ['Sabão em Pó', 'Detergente', 'Amaciante', 'Água Sanitária', 'Desinfetante', 'Lustra Móveis', 'Multiuso' ],
-    ]);
 });
